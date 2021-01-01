@@ -1,0 +1,25 @@
+<h3>Add Employee</h3>
+<div style="width: 400px;">
+  <form [formGroup]="createForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">First Name</label>
+      <input [ngClass]="{ 'is-invalid': submitted && f.name.errors }" type="text" class="form-control" id="name"
+        required [(ngModel)]="name" name="name" formControlName="name">
+      <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+        <div *ngIf="f.name.errors.required">First Name is required</div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="name">Job</label>
+      <input [ngClass]="{ 'is-invalid': submitted && f.job.errors }" type="text" class="form-control" id="job"
+        [(ngModel)]="job" name="job" formControlName="job">
+      <div *ngIf="submitted && f.job.errors" class="invalid-feedback">
+        <div *ngIf="f.job.errors.required">Job is required</div>
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+    <button type="button" (click)="cancel()" class="btn btn-danger">Return to Employees</button>
+  </form>
+</div>
