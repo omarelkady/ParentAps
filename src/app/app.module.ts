@@ -4,7 +4,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CreateEmployeeComponent } from './components/create-employee/create-employee.component';
-import { EmployeeDetailsComponent } from './components/employee-details/employee-details.component';
 import { EmployeeListComponent } from './components/employee-list/employee-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UpdateEmployeeComponent } from './components/update-employee/update-employee.component';
@@ -18,7 +17,6 @@ import { MatDialogModule } from '@angular/material';
   declarations: [
     AppComponent,
     CreateEmployeeComponent,
-    EmployeeDetailsComponent,
     EmployeeListComponent,
     UpdateEmployeeComponent,
     NavbarComponent,

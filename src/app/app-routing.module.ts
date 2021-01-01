@@ -1,4 +1,3 @@
-import { EmployeeDetailsComponent } from './components/employee-details/employee-details.component';
 import { CreateEmployeeComponent } from './components/create-employee/create-employee.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';

@@ -34,8 +34,4 @@ export class EmployeeService {
     return this.http.delete(`${this.baseUrl + '/api/users?page=2'}` + id, { responseType: 'text' });
   }
 
-  getEmployee(id: number): Observable<any> {
-    return this.http.get(`${this.baseUrl}/${id}`);
-  }
-
 }
